@@ -34,3 +34,18 @@
 .normal {
   background-color: rgba(0, 0, 0, 0.2);
 }
+
+.iconHeight {
+  height: 25px !important;
+  width: 25px !important;
+}
+
+.editTask {
+  display: flex;
+  flex: auto;
+  justify-content: flex-start;
+}
+
+.maxWidth {
+  width: 100%;
+}

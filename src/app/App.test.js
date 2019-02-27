@@ -6,8 +6,8 @@ import { shallow, mount } from 'enzyme';
 const stateFixture = {
   newTask: 'eat the frog 20pts',
   tasks: [
-    {name: 'kill bill', points: 6},
-    {name: 'get shorty', points: 12},
+    {name: 'kill bill', taskPriorityValue: 6},
+    {name: 'get shorty', taskPriorityValue: 12},
   ],
 };
 
@@ -50,5 +50,5 @@ it('parses point input in the task name', () => {
   expect(wrapper.state().tasks.length).toEqual(2);
   wrapper.find('form#addtask').first().simulate('submit');
   expect(wrapper.state().tasks.length).toEqual(3);
-  expect(wrapper.state().tasks[2].points).toEqual(20);
+  expect(wrapper.state().tasks[2].taskPriorityValue).toEqual(20);
 });
